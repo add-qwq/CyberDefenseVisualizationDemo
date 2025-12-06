@@ -5,6 +5,12 @@ Explanation: This project is a spontaneous work, so it may not be considered com
 
 A visual interactive demonstration project for network attack and defense education, drawn using Canvas. It simulates various network attack scenarios and defense mechanisms, providing an intuitive way for users to learn about network security concepts through dynamic visualization and interactive operations.
 
+**[Online Demo (Click to Visit - Chinese Site)](https://www.rockaz.top/CyberDefenseVisualizationDemo/)**  
+*Note: This website's server is located in China, ensuring faster and more stable access for users within China. The page language is Chinese. For security defense purposes (to protect against a large number of automated attack IPs from outside China), we have blocked all traffic originating from outside China.*
+
+**[Online Demo (Click to Visit - English Site)](https://add-qwq.github.io/CyberDefenseVisualizationDemo(DemoPage)/CyberDefenseVisualizationDemo-en.html)**  
+*Note: This website is hosted on GitHub Pages. Users within China may experience significant latency when accessing it, and it is suitable for users outside China (users worldwide).*
+
 ## Core Features
 1. **Multiple Attack Scenarios Simulation**:
    - Normal traffic simulation
@@ -77,7 +83,13 @@ A visual interactive demonstration project for network attack and defense educat
 
 说明：此项目为一时兴起的作品，所以可能并不算完善，也就是类似一个简单的练习项目
 
-一个用于网络攻防教育的可视化交互演示项目，使用Canvas绘制。该项目模拟了多种网络攻击场景及防御机制，通过动态可视化与交互式操作，帮助用户直观学习网络安全相关概念。
+一个用于网络攻防教育的可视化交互演示项目，使用Canvas绘制。该项目模拟了多种网络攻击场景及防御机制，通过动态可视化与交互式操作，帮助用户直观学习网络安全相关概念
+
+**[在线演示（点击访问--中文站）](https://www.rockaz.top/CyberDefenseVisualizationDemo/)**  
+*注：该网站服务器位于中国，中国境内用户访问更快速稳定页面语言为中文，但出于安全防御目的（为了防御大量来自中国境外的自动化攻击IP），我们已封锁所有中国以外的流量*
+
+**[在线演示（点击访问--英文站）](https://add-qwq.github.io/CyberDefenseVisualizationDemo(DemoPage)/CyberDefenseVisualizationDemo-en.html)**  
+*注：该网站由GitHub Page托管，中国境内用户访问可能有较大延迟，适合中国境外用户（全球各地用户）访问*
 
 ## 核心功能
 1. **多种攻击场景模拟**：
