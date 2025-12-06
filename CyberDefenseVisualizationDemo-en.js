@@ -49,7 +49,7 @@ function detectMobileDevice() {
     const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
     const isSmallScreen = window.innerWidth < 768;
     if (isMobile || isSmallScreen) {
-        alert("请开启浏览器的'电脑版访问'功能以获得最佳体验！");
+        alert("Please enable 'Desktop Site' in your browser for the best experience!");
     }
 }
 
@@ -139,10 +139,10 @@ function toggleTheme(manual = true) {
     const btn = document.getElementById('btn-theme');
     if (isLightMode) {
         body.classList.add('light-mode');
-        btn.innerHTML = '☀️ 切换主题';
+        btn.innerHTML = '☀️ Toggle Theme';
     } else {
         body.classList.remove('light-mode');
-        btn.innerHTML = '🌙 切换主题';
+        btn.innerHTML = '🌙 Toggle Theme';
     }
     if (manual) {
         localStorage.setItem('theme', isLightMode ? 'light' : 'dark');
@@ -421,7 +421,7 @@ function drawNetworkLines() {
 
         ctx.fillStyle = getCSSVar('--term-blue');
         ctx.font = "12px 'Segoe UI', Arial, sans-serif";
-        ctx.fillText("WAF已启用", wallX - 25, centerY - 210);
+        ctx.fillText("WAF Enabled", wallX - 25, centerY - 210);
     } else {
         ctx.strokeStyle = getCSSVar('--ui-border');
         ctx.setLineDash([5, 5]);
@@ -519,13 +519,13 @@ function updateHUD() {
     const alertBox = document.getElementById('server-alert');
     if (stats.health <= 0) {
         alertBox.style.display = 'block';
-        if (bwVal >= 95) alertBox.innerText = "⛔服务器崩溃（带宽耗尽）";
-        else if (cpuVal >= 95 && highCpuDuration >= CPU_CRASH_DURATION) alertBox.innerText = "⛔服务器崩溃（CPU 持续过载）";
-        else if (connVal >= 180) alertBox.innerText = "⛔服务器崩溃（连接数占满）";
-        else alertBox.innerText = "⛔服务器崩溃（服务不可用）";
+        if (bwVal >= 95) alertBox.innerText = "⛔Server crashed (Bandwidth exhausted)";
+        else if (cpuVal >= 95 && highCpuDuration >= CPU_CRASH_DURATION) alertBox.innerText = "⛔Server crashed (CPU overloaded)";
+        else if (connVal >= 180) alertBox.innerText = "⛔Server crashed (Connections maxed)";
+        else alertBox.innerText = "⛔Server crashed (Service unavailable)";
     } else if (cpuVal > 90 || bwVal > 90) {
         alertBox.style.display = 'block';
-        alertBox.innerText = cpuVal > 90 ? "⚠️CPU 过载（应用层压力）" : "⚠️带宽饱和（网络层压力）";
+        alertBox.innerText = cpuVal > 90 ? "⚠️CPU Overload (Application layer pressure)" : "⚠️Bandwidth Saturation (Network layer pressure)";
     } else {
         alertBox.style.display = 'none';
     }
@@ -542,7 +542,7 @@ function setMode(m) {
 function toggleWAF() {
     wafEnabled = !wafEnabled;
     const btn = document.getElementById('btn-waf');
-    btn.innerText = wafEnabled ? "CDN-WAF: 开" : "CDN-WAF: 关";
+    btn.innerText = wafEnabled ? "CDN-WAF: On" : "CDN-WAF: Off";
     btn.classList.toggle('active');
 }
 
@@ -569,10 +569,10 @@ function checkAnswer(questionId, radioEl) {
 
     if (radioEl.value === correctAnswers[questionId]) {
         resultEl.style.color = getCSSVar('--term-green');
-        resultEl.innerText = '回答正确！';
+        resultEl.innerText = 'Correct answer!';
     } else {
         resultEl.style.color = getCSSVar('--term-red');
-        resultEl.innerText = '回答错误！再想想？';
+        resultEl.innerText = 'Wrong answer! Try again?';
     }
 }
 
@@ -597,13 +597,13 @@ function calculateScore() {
     const scoreEl = document.getElementById('score-result');
 
     if (score === 100) {
-        scoreEl.innerHTML = `满分！（${correctCount}/${totalCount}）`;
+        scoreEl.innerHTML = `Perfect score! (${correctCount}/${totalCount})`;
     } else if (score >= 80) {
-        scoreEl.innerHTML = `优秀！得分：${score}分（${correctCount}/${totalCount}）`;
+        scoreEl.innerHTML = `Excellent! Score: ${score} points (${correctCount}/${totalCount})`;
     } else if (score >= 60) {
-        scoreEl.innerHTML = `合格！得分：${score}分（${correctCount}/${totalCount}），可再巩固下知识点`;
+        scoreEl.innerHTML = `Pass! Score: ${score} points (${correctCount}/${totalCount}), you can review the knowledge`;
     } else {
-        scoreEl.innerHTML = `需加强学习！得分：${score}分（${correctCount}/${totalCount}）`;
+        scoreEl.innerHTML = `Needs improvement! Score: ${score} points (${correctCount}/${totalCount})`;
     }
 }
 
