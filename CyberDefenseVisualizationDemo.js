@@ -26,7 +26,7 @@ let stats = {
 
 let highCpuDuration = 0;
 const HIGH_CPU_THRESHOLD = 90;
-const CPU_CRASH_DURATION = 250;
+const CPU_CRASH_DURATION = 200;
 
 let attackerX, serverX, centerY;
 let wallX;
@@ -195,7 +195,7 @@ class Packet {
         this.volume = 0;
         if (type === 'normal') this.volume = 0.004;
         else if (type === 'ddos') this.volume = 0.3;
-        else if (type === 'cc' || type === 'bypass') this.volume = 0.01;
+        else if (type === 'cc' || type === 'bypass') this.volume = 0.02;
     }
 
     update() {
@@ -437,7 +437,7 @@ function spawnPackets() {
     let rate = 0.02;
     if (mode === 'ddos') rate = 0.8;
     if (mode === 'cc') rate = 0.4;
-    if (mode === 'bypass') rate = 0.4;
+    if (mode === 'bypass') rate = 0.5;
 
     if (Math.random() < 0.02) particles.push(new Packet('normal'));
 
