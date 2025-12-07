@@ -3,7 +3,7 @@
 
 ![Downloads](https://img.shields.io/github/downloads/add-qwq/CyberDefenseVisualizationDemo/total?style=flat-square&logo=github)
 ![GitHub license](https://img.shields.io/github/license/add-qwq/CyberDefenseVisualizationDemo?style=flat-square)
-![GitHub stars](https://img.shields.io/github/stars/add-qwq/CyberDefenseVisualizationDemou)
+![GitHub stars](https://img.shields.io/github/stars/add-qwq/CyberDefenseVisualizationDemo)
 
 
 Explanation: This project is a spontaneous work, so it may not be considered complete, similar to a simple practice project
@@ -88,7 +88,7 @@ A visual interactive demonstration project for network attack and defense educat
 
 ![Downloads](https://img.shields.io/github/downloads/add-qwq/CyberDefenseVisualizationDemo/total?style=flat-square&logo=github)
 ![GitHub license](https://img.shields.io/github/license/add-qwq/CyberDefenseVisualizationDemo?style=flat-square)
-![GitHub stars](https://img.shields.io/github/stars/add-qwq/CyberDefenseVisualizationDemou)
+![GitHub stars](https://img.shields.io/github/stars/add-qwq/CyberDefenseVisualizationDemo)
 
 
 说明：此项目为一时兴起的作品，所以可能并不算完善，也就是类似一个简单的练习项目
